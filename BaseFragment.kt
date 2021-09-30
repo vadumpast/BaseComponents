@@ -1,5 +1,3 @@
-package com.example.moneycounter.base
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -42,7 +40,7 @@ abstract class BaseFragment<
         Toast.makeText(context, text, Toast.LENGTH_SHORT).show()
     }
 
-    fun showToast(@StringRes text: Int) {
+    override fun showToast(@StringRes text: Int) {
         showToast(getString(text))
     }
 }

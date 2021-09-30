@@ -1,5 +1,3 @@
-package com.example.moneycounter.base
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
@@ -18,8 +16,6 @@ abstract class BaseActivity<
         viewBinding=createViewBinding(LayoutInflater.from(this)).also {
             setContentView(it.root)
         }
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = true
     }
 
     protected abstract fun createViewBinding(inflater: LayoutInflater): VB
