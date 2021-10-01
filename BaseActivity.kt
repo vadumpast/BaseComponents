@@ -1,8 +1,6 @@
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.view.WindowInsetsControllerCompat
 import androidx.viewbinding.ViewBinding
 
 abstract class BaseActivity<
